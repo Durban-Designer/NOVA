@@ -1,0 +1,57 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="74b105a0-9070-1c63-61bc-23e55f88626e">
+    <mxGraphModel dx="1878" dy="1115" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" style=";html=1;" />
+        <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="360" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-2" value="NOVA API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="260" y="390" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-3" value="NOVA Runner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="440" y="390" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-5" value="Nomad" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="640" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-7" value="NOVA Postgres DB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="530" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="bcCQ4C3-zXA4StQFoyfP-7" target="bcCQ4C3-zXA4StQFoyfP-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="610" as="sourcePoint" />
+            <mxPoint x="880" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="500" />
+              <mxPoint x="330" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="bcCQ4C3-zXA4StQFoyfP-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="530" as="sourcePoint" />
+            <mxPoint x="880" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="500" />
+              <mxPoint x="510" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="290" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;NOVA API&lt;/h1&gt;&lt;p&gt;This API consists of the following primary endpoints;&lt;/p&gt;&lt;p&gt;- GET - /v1/services&lt;/p&gt;&lt;p&gt;- POST - /v1/services&lt;/p&gt;&lt;p&gt;- PUT - /v1/services/?serviceId&lt;/p&gt;&lt;p&gt;- DELETE - /v1/services/?serviceId&lt;/p&gt;&lt;p&gt;- POST - /v1/services/endpoints&lt;/p&gt;&lt;p&gt;- PUT - /v1/services/endpoints/?endpointId&lt;br&gt;&lt;/p&gt;&lt;p&gt;- DELETE - /v1/services/endpoints/?endpointId&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="665" y="380" width="255" height="280.31" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="960" y="360" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bcCQ4C3-zXA4StQFoyfP-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;NOVA Runner&lt;/h1&gt;&lt;p&gt;This is simply a container which spins up, reads all services in the DB and then hits all the endpoints each service has marked to validate.&lt;/p&gt;&lt;p&gt;This should be setup with external configuration so that it runs regularly. The recomended job runner is Nomad by Hashicorp.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="375" width="235" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
