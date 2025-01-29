@@ -1,4 +1,4 @@
-package com.neuronaut.nova.model;
+package com.carbowitz.nova.model;
 
 @Entity
 @Table(name = "endpoints")

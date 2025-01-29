@@ -1,10 +1,10 @@
-package com.neuronaut.nova.controller;
+package com.carbowitz.nova.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.neuronaut.nova.utilities.ResponseMessages;
+import com.carbowitz.nova.utilities.ResponseMessages;
 
 @RestController
 public class StatusController {
