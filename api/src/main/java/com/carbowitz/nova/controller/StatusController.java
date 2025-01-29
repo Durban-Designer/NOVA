@@ -8,10 +8,8 @@ import com.carbowitz.nova.utilities.ResponseMessages;
 
 @RestController
 public class StatusController {
-
     @GetMapping("/")
     public String getStatus() {
         return ResponseMessages.statusIsOk;
     }
-
 }

@@ -1,6 +1,6 @@
 package com.carbowitz.nova.repository;
 
-import org.springframework.data.jpa.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
@@ -14,5 +14,5 @@ public interface ServiceRepository extends PagingAndSortingRepository<Service, L
     Page<Service> findAllByName(String name, Pageable pageable);
     Optional<Service> findById(Long id);
     Service findByName(String name);
-    deleteByServiceId(Long serviceId);
+    void deleteById(Long serviceId);
 }

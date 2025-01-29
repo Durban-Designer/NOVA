@@ -7,8 +7,8 @@ import java.util.Optional;
 import com.carbowitz.nova.model.Endpoint;
 
 @Component
-public interface EndpointRepository extends JPARepository<Endpoint, Long> {
+public interface EndpointRepository extends JpaRepository<Endpoint, Long> {
     Optional<Endpoint> findById(Long id);
     Endpoint findByName(String name);
-    long deleteByEndpointId(Long endpointId);
+    void deleteById(Long endpointId);
 }

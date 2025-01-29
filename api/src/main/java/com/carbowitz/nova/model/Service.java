@@ -1,5 +1,11 @@
 package com.carbowitz.nova.model;
 
+import jakarta.persistence.*;
+import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import java.util.Set;
+
 @Entity
 @Table(name = "services")
 @Data
