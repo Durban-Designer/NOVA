@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 @Table(name = "services")
 @Data
-public class Service {
+public class ManagedApi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -18,6 +18,6 @@ public class Service {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy="service")
+    @OneToMany(mappedBy = "managedApi", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Endpoint> endpoints;
 }

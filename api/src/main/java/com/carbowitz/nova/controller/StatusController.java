@@ -2,9 +2,8 @@ package com.carbowitz.nova.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import com.carbowitz.nova.utilities.ResponseMessages;
+import com.carbowitz.nova.utility.ResponseMessages;
 
 @RestController
 public class StatusController {

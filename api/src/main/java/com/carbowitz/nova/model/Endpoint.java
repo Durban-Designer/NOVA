@@ -30,5 +30,5 @@ public class Endpoint {
     private String requestType;
 
     @ManyToOne
-    private Service service;
+    private ManagedApi managedApi;
 }
